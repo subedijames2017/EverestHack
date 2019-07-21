@@ -1,0 +1,4 @@
+select#sel1.selectpicker.f-18.form-control(required='true' name="hospital" data-show-subtext="true" data-live-search="true")
+  option(value="" disabled selected hidden)  Select Hospital
+  each hospital in hospitals 
+    option(value=hospital.hospitalAddressUuid)= hospital.hospital
